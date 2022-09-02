@@ -11,5 +11,5 @@ def learn_python(request):
     cname='python'
     duration='3 Months'
     seats=60
-    django_details={'nm':cname,'du':duration,'st':seats}
+    django_details={'nm':cname,'du':False,'st':seats}
     return render(request,'course/courseone.html',django_details)
