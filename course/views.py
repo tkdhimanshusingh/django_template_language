@@ -16,3 +16,6 @@ def learn_python(request):
 def date_time(request):
     d=datetime.now()
     return render(request,'course/courseone.html',{'dt':d})
+def float(request):
+    value=56.521623
+    return render(request,'course/courseone.html',{'v':value})
