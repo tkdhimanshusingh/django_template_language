@@ -5,4 +5,5 @@ urlpatterns = [
     path('learnpy/',views.learn_python),
     path('date_time/',views.date_time),
     path('float/',views.float),
+    path('if/',views.if_clause),
 ]

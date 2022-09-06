@@ -16,9 +16,25 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h3>{{v|floatformat}}</h3>
-        <h3>{{v|floatformat:3}}</h3>
-        <h3>{{v|floatformat:"0"}}</h3>
-        <h3>{{v|floatformat:"-3"}}</h3>
+        {%if nm%}
+            <h1>Number={{nm}}</h1>
+        {%endif%}
+        {%if st%}
+            <h1>Seats={{st}}</h1>
+        {%endif%}
+        {%if nm and st%}
+            <h1>Number={{nm}}</h1>
+            <h1>Seats={{st}}</h1>
+        {%endif%}
+        {%if nm or st%}
+            <h1>Number={{nm}}</h1>
+            <h1>Seats={{st}}</h1>
+        {%endif%}
+        {%if not nm%}
+            <h1>No Numbers Available</h1>
+        {%endif%}
+        {%if not st%}
+            <h1>No Seats Available</h1>
+        {%endif%}
     </body>
 </html>

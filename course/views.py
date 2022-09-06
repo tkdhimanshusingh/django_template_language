@@ -19,3 +19,6 @@ def date_time(request):
 def float(request):
     value=56.521623
     return render(request,'course/courseone.html',{'v':value})
+def if_clause(request):
+    nm,st=1,0
+    return render(request,'course/courseone.html',{'nm':nm,'st':st})
