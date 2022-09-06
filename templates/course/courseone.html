@@ -36,5 +36,8 @@
         {%if not st%}
             <h1>No Seats Available</h1>
         {%endif%}
+        {%if course == 'Django'%}
+            <h1>We'll be studying {{course}}</h1>
+        {%endif%}
     </body>
 </html>

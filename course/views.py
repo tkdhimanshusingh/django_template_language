@@ -21,4 +21,5 @@ def float(request):
     return render(request,'course/courseone.html',{'v':value})
 def if_clause(request):
     nm,st=1,0
-    return render(request,'course/courseone.html',{'nm':nm,'st':st})
+    course='Django'
+    return render(request,'course/courseone.html',{'nm':nm,'st':st,'course':'Django'})
